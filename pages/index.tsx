@@ -54,7 +54,7 @@ export default function Home() {
     }
 
     if (!passwordVerified) {
-      if (query.trim() !== 'waypostDEMO123') {
+      if (query.trim() !== 'pass') {
         setError('Incorrect password. Please enter the correct password.');
         return;
       }
@@ -146,7 +146,7 @@ export default function Home() {
                       <Image
                         key={index}
                         //src="/images/waypost_icon.png"
-                        src="/waypost_icon3.png"
+                        src="/waypost_icon4.png"
                         alt="AI"
                         width="40"
                         height="40"
