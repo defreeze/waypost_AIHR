@@ -29,7 +29,7 @@ export default function Home() {
   }>({
     messages: [
       {
-        message: 'Hi, how can I guide your way?',
+        message: 'Hi, how can I guide your way around cloudjiffy?',
         type: 'apiMessage',
       },
     ],
@@ -133,7 +133,7 @@ export default function Home() {
       <Layout>
         <div className="mx-auto flex flex-col gap-4">
           <h1 className="text-2xl font-bold leading-[1.1] tracking-tighter text-center text-blue-500">
-            waypost.ai guide demo
+            waypost.ai cloudjiffy demo
           </h1>
           <main className={styles.main}>
             <div className={styles.cloud}>
