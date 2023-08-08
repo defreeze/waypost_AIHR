@@ -64,7 +64,7 @@ export default function Home() {
     }
 
     // Check if the message is 'hello', and reply with 'hello to you too'
-    if (query.trim().toLowerCase() === 'What are the latest courses?') {
+    if (query) {
       setMessageState((state) => ({
         ...state,
         messages: [
