@@ -29,7 +29,7 @@ export default function Home() {
   }>({
     messages: [
       {
-        message: 'Hello, how can I guide your way around AIHR?',
+        message: 'Welcome to AIHR, what would you like to study?',
         type: 'apiMessage',
       },
     ],
