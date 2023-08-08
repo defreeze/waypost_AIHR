@@ -58,8 +58,27 @@ export default function Home() {
         setError('Incorrect password. Please enter the correct password.');
         return;
       }
-      // If the password is correct, proceed to other questions
       setPasswordVerified(true);
+      setQuery('');
+      return;
+    }
+
+    // Check if the message is 'hello', and reply with 'hello to you too'
+    if (query.trim().toLowerCase() === 'hello') {
+      setMessageState((state) => ({
+        ...state,
+        messages: [
+          ...state.messages,
+          {
+            type: 'userMessage',
+            message: query.trim(),
+          },
+          {
+            type: 'apiMessage',
+            message: 'hello to you too',
+          },
+        ],
+      }));
       setQuery('');
       return;
     }
@@ -78,6 +97,7 @@ export default function Home() {
     setLoading(true);
     setQuery('');
 
+    // Continue with the existing logic...
     try {
       const response = await fetch('/api/chat', {
         method: 'POST',
@@ -110,8 +130,6 @@ export default function Home() {
       }
 
       setLoading(false);
-
-      // Scroll to bottom
       messageListRef.current?.scrollTo(0, messageListRef.current.scrollHeight);
     } catch (error) {
       setLoading(false);

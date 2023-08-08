@@ -15,6 +15,7 @@
 # production
 /build
 
+/AIHR/pdf_docs
 # misc
 .DS_Store
 *.pem
