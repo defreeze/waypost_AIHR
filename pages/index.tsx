@@ -64,7 +64,7 @@ export default function Home() {
     }
 
     // Check if the message is 'hello', and reply with 'hello to you too'
-    if (query.trim().toLowerCase() === 'hello') {
+    if (query.trim().toLowerCase() === 'What are the latest courses?') {
       setMessageState((state) => ({
         ...state,
         messages: [
@@ -75,7 +75,7 @@ export default function Home() {
           },
           {
             type: 'apiMessage',
-            message: 'hello to you too',
+            message: "The latest course is 'HR generalist' find more info here: https://www.aihr.com/courses/hr-generalist-certification/  ",
           },
         ],
       }));
