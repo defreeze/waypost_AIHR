@@ -54,7 +54,7 @@ export default function Home() {
     }
 
     if (!passwordVerified) {
-      if (query.trim() !== 'pass') {
+      if (query.trim() !== 'Paulus2happy') {
         setError('Incorrect password. Please enter the correct password.');
         return;
       }
