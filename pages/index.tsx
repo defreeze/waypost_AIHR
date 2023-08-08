@@ -94,7 +94,7 @@ export default function Home() {
           },
           {
             type: 'apiMessage',
-            message: `Yes the single course is € 875. Also consider the People Analytics and HR Data Analyst courses, combined it will give full rounded expertise. Instead of 3 x € 875 we have A Full Access option of € 1,450 for 11 courses!`,
+            message: `The single course is €875. Consider the People Analytics and HR Data Analyst courses for a well-rounded expertise that fit your goal. Instead of 3 x € 875 we have a Full Access option of € 1,450 for 11 courses!`,
           },
         ],
       }));
