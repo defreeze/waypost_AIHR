@@ -63,7 +63,7 @@ export default function Home() {
       return;
     }
 
-    // Check if the message is 'hello', and reply with 'hello to you too'
+    // hardcoded messages
     if (query.trim().startsWith('What does') || query.trim().startsWith('How much')) {
       setMessageState((state) => ({
         ...state,
@@ -82,6 +82,27 @@ export default function Home() {
       setQuery('');
       return;
     }
+
+    if (query.trim().startsWith('Can I buy')) {
+      setMessageState((state) => ({
+        ...state,
+        messages: [
+          ...state.messages,
+          {
+            type: 'userMessage',
+            message: query.trim(),
+          },
+          {
+            type: 'apiMessage',
+            message: `Yes the single course is € 875. Also consider the People Analytics and HR Data Analyst courses, combined it will give full rounded expertise. Instead of 3 x € 875 we have A Full Access option of € 1,450 for 11 courses!`,
+          },
+        ],
+      }));
+      setQuery('');
+      return;
+    }
+
+
 
     setMessageState((state) => ({
       ...state,
