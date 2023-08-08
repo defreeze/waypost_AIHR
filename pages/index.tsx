@@ -64,7 +64,7 @@ export default function Home() {
     }
 
     // Check if the message is 'hello', and reply with 'hello to you too'
-    if (query) {
+    if (query.trim().startsWith('What does') || query.trim().startsWith('How much')) {
       setMessageState((state) => ({
         ...state,
         messages: [
@@ -75,7 +75,7 @@ export default function Home() {
           },
           {
             type: 'apiMessage',
-            message: `You asked: '${query.trim()}'. The latest course is 'HR generalist'. Find more info here: https://www.aihr.com/courses/hr-generalist-certification/`,
+            message: `The single course is € 875 but the Full Access program is only € 1,450 for 11 courses instead of € 8,750. This is our best investment deal.  `,
           },
         ],
       }));
