@@ -75,7 +75,7 @@ export default function Home() {
           },
           {
             type: 'apiMessage',
-            message: "The latest course is 'HR generalist' find more info here: https://www.aihr.com/courses/hr-generalist-certification/  ",
+            message: `You asked: '${query.trim()}'. The latest course is 'HR generalist'. Find more info here: https://www.aihr.com/courses/hr-generalist-certification/`,
           },
         ],
       }));
@@ -106,7 +106,7 @@ export default function Home() {
         },
         body: JSON.stringify({
           question: query.trim(),
-          history: messageState.history,
+          //history: messageState.history,
         }),
       });
       const data = await response.json();
@@ -125,7 +125,7 @@ export default function Home() {
               sourceDocs: data.sourceDocuments,
             },
           ],
-          history: [...state.history, [query.trim(), data.text]],
+          //history: [...state.history, [query.trim(), data.text]],
         }));
       }
 
