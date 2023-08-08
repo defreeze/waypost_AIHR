@@ -246,7 +246,7 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@pinecone-database/pinecone@*", "@pinecone-database/pinecone@0.0.14":
+"@pinecone-database/pinecone@*", "@pinecone-database/pinecone@^0.0.14":
   version "0.0.14"
   resolved "https://registry.npmjs.org/@pinecone-database/pinecone/-/pinecone-0.0.14.tgz"
   integrity sha512-uQspP/fGB2xhS/PWVD9/XnNnzuTfjukuX9IKH0EYqJMXd0Yx+ewcRADVFrF5RBeBWXBWrpGhIhvWE0hTPy/BAg==

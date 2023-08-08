@@ -10,7 +10,7 @@ import { DirectoryLoader } from 'langchain/document_loaders/fs/directory';
    Make sure to add your PDF files inside the 'docs' folder
 */
 //const filePath = 'docs';
-const filePath = 'cloudjiffy/pdf_docs';
+const filePath = 'AIHR/pdf_docs';
 
 export const run = async () => {
   try {
