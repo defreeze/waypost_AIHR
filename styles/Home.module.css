@@ -33,7 +33,7 @@
 
 .passwordInput:focus {
   outline: none;
-  border: none;
+  border: 1px solid #d9d9e3;
 }
 
 
