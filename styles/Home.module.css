@@ -25,7 +25,7 @@
   padding: 1rem 2rem 1rem 2rem;
   width: 75vw;
   border-radius: 1rem;
-  border: ;
+  border: 1px solid #d9d9e3;
   background: #ffffff;
   color: #000;
   outline: none;
@@ -33,7 +33,7 @@
 
 .passwordInput:focus {
   outline: none;
-  border: 1px solid #d9d9e3;
+  border: none;
 }
 
 
