@@ -152,9 +152,9 @@ export default function Home() {
 
       setLoading(false);
       //messageListRef.current?.scrollTo(0, messageListRef.current.scrollHeight);
-      useEffect(() => {
-        messageListRef.current?.scrollTo(0, messageListRef.current.scrollHeight);
-      }, [messageState.messages]);
+      if (messageListRef.current) {
+        messageListRef.current.scrollTo(0, messageListRef.current.scrollHeight);
+      }
 
 
     } catch (error) {
