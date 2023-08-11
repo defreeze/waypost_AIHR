@@ -85,7 +85,15 @@
   height: 100%;
   overflow-y: auto;
   scrollbar-width: none;
+  /* For Firefox */
+  -ms-overflow-style: none;
+  /* For Internet Explorer and Edge */
   border-radius: 0.5rem;
+}
+
+.messagelist::-webkit-scrollbar {
+  display: none;
+  /* For Chrome, Safari, and Opera */
 }
 
 .messagelistloading {
