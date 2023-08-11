@@ -244,7 +244,7 @@ export default function Home() {
                       value={query}
                       onChange={(e) => setQuery(e.target.value)}
                       placeholder="Enter password here"
-                      className={styles.passwordInput}
+                      className={styles.passwordInput} // <-- This line is updated
                     />
                   )}
                   {passwordVerified && (

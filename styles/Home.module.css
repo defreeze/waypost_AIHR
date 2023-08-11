@@ -31,10 +31,11 @@
   outline: none;
 }
 
-input[type="password"]:focus {
+.passwordInput:focus {
   outline: none;
   border: none;
 }
+
 
 .textarea:disabled {
   opacity: 0.5;
