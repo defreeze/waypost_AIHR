@@ -151,7 +151,12 @@ export default function Home() {
       }
 
       setLoading(false);
-      messageListRef.current?.scrollTo(0, messageListRef.current.scrollHeight);
+      //messageListRef.current?.scrollTo(0, messageListRef.current.scrollHeight);
+      useEffect(() => {
+        messageListRef.current?.scrollTo(0, messageListRef.current.scrollHeight);
+      }, [messageState.messages]);
+
+
     } catch (error) {
       setLoading(false);
       setError('An error occurred while fetching the data. Please try again.');
