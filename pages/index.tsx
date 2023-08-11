@@ -48,6 +48,13 @@ export default function Home() {
 
     setError(null);
 
+    // make sure the chat updates to show the latest message
+    useEffect(() => {
+      if (messageListRef.current) {
+        messageListRef.current.scrollTo(0, messageListRef.current.scrollHeight);
+      }
+    }, [messageState.messages]); // Triggered every time a new message is added
+
     if (!query) {
       alert('Please input a question');
       return;
@@ -152,9 +159,6 @@ export default function Home() {
 
       setLoading(false);
       //messageListRef.current?.scrollTo(0, messageListRef.current.scrollHeight);
-      if (messageListRef.current) {
-        messageListRef.current.scrollTo(0, messageListRef.current.scrollHeight);
-      }
 
 
     } catch (error) {
