@@ -1,3 +1,9 @@
+# this is the correct working webscraper
+# how to run it:
+# python webscraper.py https://www.waypost.ai/demo/dashboard same_websites
+# same_websites means it only evaluates urls from that particular website, not external links
+# currently only same_websites == true is relevant
+
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin, urlparse
 import sys
